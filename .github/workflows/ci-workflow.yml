@@ -13,3 +13,13 @@ jobs:
       run: | 
         cd DotnetTemplate.Web
         npm install
+    - name: Run C Sharp tests    
+      run: dotnet test
+    - name: Run Typescript tests   
+      run: | 
+        cd DotnetTemplate.Web
+        npm t
+    - name: Run linter  
+      run: | 
+        cd DotnetTemplate.Web
+        npm run lint
