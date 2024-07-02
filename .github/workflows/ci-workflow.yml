@@ -32,5 +32,5 @@ jobs:
             Content-Type: application/json
           body: |
             {
-              "text": "Pipeline succeeded!"
+              "text": "Pipeline succeeded!!"
             }
