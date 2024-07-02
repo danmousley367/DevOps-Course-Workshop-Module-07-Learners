@@ -23,3 +23,6 @@ jobs:
       run: | 
         cd DotnetTemplate.Web
         npm run lint
+    - name: Slack integration
+      run: curl -X POST -H 'Content-type: application/json' --data '{"text": "A very important thing has occurred! <https://alert-system.com/alerts/1234|Click here> for details!"}' https://hooks.slack.com/services/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
+
